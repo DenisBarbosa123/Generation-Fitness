@@ -1,24 +1,31 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Sign in</ion-title>
+        <ion-title>Login</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content padding id="body">
     <ion-list>
-        <h2>Welcome to Generation Fitness!!</h2>
+        <h2>Seja Bem-Vindo ao Generation Fitness !!</h2>
         <ion-item>
-            <ion-label position="floating">username</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating">E-mail</ion-label>
+            <ion-input type="email" [(ngModel)]="newAluno.email" name="email" required #email="ngModel"></ion-input>
         </ion-item>
+        <span class="error" *ngIf="email.invalid && email.dirty">
+            *Campo Invalido
+        </span>
 
         <ion-item>
-            <ion-label position="floating">password</ion-label>
-            <ion-input></ion-input>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="newAluno.senha" name="senha" required #senha="ngModel"></ion-input>
         </ion-item>
+        <span class="error" *ngIf="senha.invalid && senha.dirty">
+            *Campo Invalido
+        </span>
 
     </ion-list>
 
-    <ion-button expand="block" (click)="makeLogin()">Sign In</ion-button>
+    <ion-button color="success" expand="block" (click)="makeLogin()">Entrar</ion-button>
+    <ion-button color="danger" expand="block" (click)="closeApp()">Sair</ion-button>
 
 </ion-content>
