@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Aluno } from './aluno';
+import { Aluno } from '../model/aluno';
 
 @Component({
   selector: 'app-login',
