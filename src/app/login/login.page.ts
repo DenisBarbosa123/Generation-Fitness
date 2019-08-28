@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Aluno } from '../model/aluno';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { Aluno } from '../model/aluno';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   newAluno: Aluno;
   oldAluno: Aluno;
@@ -20,6 +21,10 @@ export class LoginPage implements OnInit {
     this.oldAluno.senha = "12345678";
   }
 
+  abrirHome(){
+    this.router.navigate(['tabs']);
+  }
+
   makeLogin(){
     console.log("fazendo login...");
     console.log(this.newAluno.email);
@@ -28,6 +33,7 @@ export class LoginPage implements OnInit {
     if(this.newAluno.email === this.oldAluno.email &&
         this.newAluno.senha === this.oldAluno.senha){
           console.log("login feito com sucesso!");
+          this.abrirHome();
     }else{
       console.log("erro no login!");
     }
