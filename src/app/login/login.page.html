@@ -22,6 +22,9 @@
         <span class="error" *ngIf="senha.invalid && senha.dirty">
             *Campo Invalido
         </span>
+        <span class="error" *ngIf="!this.esconderErroLogin">
+            *Login Incorreto
+        </span>
 
     </ion-list>
 

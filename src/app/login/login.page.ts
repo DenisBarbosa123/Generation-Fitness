@@ -13,6 +13,7 @@ export class LoginPage implements OnInit {
 
   newAluno: Aluno;
   oldAluno: Aluno;
+  esconderErroLogin: boolean = true;
 
   ngOnInit() {
     this.newAluno = new Aluno();
@@ -33,9 +34,13 @@ export class LoginPage implements OnInit {
     if(this.newAluno.email === this.oldAluno.email &&
         this.newAluno.senha === this.oldAluno.senha){
           console.log("login feito com sucesso!");
+          if(this.esconderErroLogin==false){
+            this.esconderErroLogin = true;
+          }
           this.abrirHome();
     }else{
       console.log("erro no login!");
+      this.esconderErroLogin = false;
     }
   }
 
