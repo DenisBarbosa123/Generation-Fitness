@@ -4,7 +4,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule'},
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule'},  { path: 'agua', loadChildren: './agua/agua.module#AguaPageModule' },
+  { path: 'dieta', loadChildren: './dieta/dieta.module#DietaPageModule' },
+  { path: 'atividade-fisica', loadChildren: './atividade-fisica/atividade-fisica.module#AtividadeFisicaPageModule' },
+  { path: 'suplementacao', loadChildren: './suplementacao/suplementacao.module#SuplementacaoPageModule' },
+  { path: 'treino', loadChildren: './treino/treino.module#TreinoPageModule' },
+  { path: 'agua-page', loadChildren: './agua-page/agua-page.module#AguaPagePageModule' },
+
+
   
 ];
 @NgModule({
