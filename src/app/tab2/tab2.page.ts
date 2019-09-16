@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  route : any;
+  constructor(router:Router) {
+  this.route = router;
+  }
 
-  constructor() {}
+  abrirAgua(){
+    this.route.navigate(['/agua']);
+  }
+
+  abrirAtividade(){
+    this.route.navigate(['/atividade-fisica']);
+  }
+  abrirDieta(){
+    this.route.navigate(['/dieta']);
+  }
+  abrirSuplementacao(){
+    this.route.navigate(['/suplementacao']);
+  }
+  abrirTreino(){
+    this.route.navigate(['/treino']);
+  }
 
 }
