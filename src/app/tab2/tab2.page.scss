@@ -1,9 +1,16 @@
     ion-content {
         --main-bg-color: black;
+        background-color: black;
     }
     
     ion-card-title {
         text-align: center;
         font-size: 15px;
+        font-style: oblique;
+    }
+    
+    ion-card-subtitle {
+        text-align: center;
+        font-size: 20px;
         font-style: oblique;
     }
