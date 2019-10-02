@@ -7,17 +7,18 @@
         h2 {
             color: white;
             text-align: center;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
         }
         
         .background {
-            background-image: url("../../assets/logoteste.jpg");
+            //background:radial-gradient();
+            background-image: url("../../assets/gym1.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             height: 100%;
-            opacity: 0.8;
+            opacity: 1;
         }
         
         .input {
