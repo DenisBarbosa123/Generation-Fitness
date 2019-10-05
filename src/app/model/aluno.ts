@@ -1,26 +1,69 @@
 export class Aluno{
-    public nome:string;
+
+    public  nome:string;
     public email:string;
     public senha:string;
+    public cpf: string;
+    public celular: string;
+    public data_nascimento: Date;
+    public objetivo: string;
 
-    private getNome():string{
+    
+    constructor(nome?:string, email?:string, senha?:string, cpf?:string, celular?:string, data_nascimento?:Date, objetivo?:string){
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.cpf = cpf;
+        this.data_nascimento = data_nascimento;
+        this.celular = celular;
+        this.objetivo = objetivo;
+
+    }
+
+    //getters and setters
+    public getcelular(): string {
+        return this.celular;
+    }
+    public setcelular(value: string) {
+        this.celular = value;
+    }
+    public getcpf(): string {
+        return this.cpf;
+    }
+    public setcpf(value: string) {
+        this.cpf = value;
+    }
+    public getobjetivo(): string {
+        return this.objetivo;
+    }
+    public setobjetivo(value: string) {
+        this.objetivo = value;
+    }
+
+    public getdatanascimento(): Date {
+        return this.data_nascimento;
+    }
+    public setdata_nascimento(value: Date) {
+        this.data_nascimento = value;
+    }
+    public getNome():string{
         return this.nome;
     }
-    private setNome(nome:string){
+    public setNome(nome:string){
         this.nome = nome;
     }
 
-    private getEmail():string{
+    public getEmail():string{
         return this.email;
     }
-    private setEmail(email:string){
+    public setEmail(email:string){
         this.email = email;
     }
 
-    private getSenha():string{
+    public getSenha():string{
         return this.senha;
     }
-    private setSenha(senha:string) {
+    public setSenha(senha:string) {
         this.senha = senha;
     }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Aluno } from '../model/aluno';
 import { Router } from '@angular/router';
+import { PerfilService } from '../perfil.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router : Router) { }
+  constructor(private router : Router, private perfilService : PerfilService) { }
 
   newAluno: Aluno;
   oldAluno: Aluno;
@@ -18,8 +19,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
     this.newAluno = new Aluno();
     this.oldAluno = new Aluno();
-    this.oldAluno.email = "denis@gmail.com";
-    this.oldAluno.senha = "12345678";
+    this.oldAluno = this.perfilService.getAluno();
   }
 
   abrirHome(){
