@@ -12,8 +12,11 @@ export class Tab1Page {
 
   constructor(private perfilService : PerfilService) {}
 
+  hoje : Date = new Date();
+
   aluno : Aluno = this.perfilService.getAluno();
-  idade : number = Math.floor(Math.ceil(Math.abs(this.aluno.getdatanascimento().getDate() - Date.now()) / (1000 * 3600 * 24)) / 365.25);
+
+  idade : number = this.hoje.getFullYear() - this.aluno.getdatanascimento().getFullYear();
 
   
 
