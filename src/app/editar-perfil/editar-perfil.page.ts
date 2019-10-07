@@ -7,13 +7,15 @@ import { Aluno } from '../model/aluno';
   styleUrls: ['./editar-perfil.page.scss'],
 })
 export class EditarPerfilPage implements OnInit {
-  aluno : Aluno = new Aluno();
+  newAluno : Aluno = new Aluno();
   constructor() { }
 
   ngOnInit() {
   }
 
   editarPerfil(aluno : Aluno) : Aluno {
-    return aluno;
+    this.newAluno.nome = aluno.nome;
+    console.log(this.newAluno.nome);
+    return this.newAluno;
   }
 }
