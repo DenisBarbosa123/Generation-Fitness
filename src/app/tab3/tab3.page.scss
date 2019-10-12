@@ -10,14 +10,20 @@ p {
 }
 
 ion-card-title {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-style: oblique;
 }
 
-img {
-    overflow: hidden;
-    border-radius: 50%;
-    width: 80%;
-    margin: auto;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border-bottom: 1px solid rgb(187, 185, 185);
+    text-align: center;
+    padding: 2px;
 }

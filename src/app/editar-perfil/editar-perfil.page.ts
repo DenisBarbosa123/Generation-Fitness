@@ -14,7 +14,8 @@ export class EditarPerfilPage implements OnInit {
   }
 
   editarPerfil(aluno : Aluno) : Aluno {
-    this.newAluno.nome = aluno.nome;
+    console.log('editando');
+    this.newAluno = new Aluno(aluno.nome, aluno.email, aluno.cpf, aluno.celular, aluno.objetivo);
     console.log(this.newAluno.nome);
     return this.newAluno;
   }

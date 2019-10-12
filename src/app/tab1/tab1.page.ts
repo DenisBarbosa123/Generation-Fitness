@@ -18,16 +18,8 @@ export class Tab1Page {
 
   aluno : Aluno = this.perfilService.getAluno();
 
-  editarPerfilComponet : EditarPerfilPage = new EditarPerfilPage();
-
   idade : number = this.hoje.getFullYear() - this.aluno.getdatanascimento().getFullYear();
 
-
-  editarPerfil(){
-    this.router.navigate(['editar-perfil']); // abre tela de perfil
-    this.aluno = this.editarPerfilComponet.editarPerfil(this.aluno);
-
-  }
 
   
 

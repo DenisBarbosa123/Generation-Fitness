@@ -8,38 +8,132 @@
 
 <ion-content>
     <ion-card>
-            <ion-card-header>
-            <ion-card-title>Peito</ion-card-title>
-            </ion-card-header>
-            <img src="../../assets/treino-peito.jpg">
+        <img src="../../assets/treino-peitoral.jpg">
+        <ion-card-header>
+            <ion-card-title>Peitoral
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table>
+                <thead>
+                    <th>Series x Repeticoes</th>
+                    <th>Exercicio</th>
+                    <th>Descanso</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let treino of treinoPeitoral">
+                        <td>{{treino.numero_repeticoes}} x {{treino.quantidade_series}}</td>
+                        <td>{{treino.nome}}</td>
+                        <td>{{treino.tempo_descanso}} seg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-card-content>
+
     </ion-card>
     <ion-card>
-            <ion-card-header>
-            <ion-card-title>Costa</ion-card-title>
-            </ion-card-header>
-            <img src="../../assets/treino-costa.jpg">
+        <img src="../../assets/treino-costa.jpg">
+        <ion-card-header>
+            <ion-card-title>Costas
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table>
+                <thead>
+                    <th>Series x Repeticoes</th>
+                    <th>Exercicio</th>
+                    <th>Descanso</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let treino of treinoCostas">
+                        <td>{{treino.numero_repeticoes}} x {{treino.quantidade_series}}</td>
+                        <td>{{treino.nome}}</td>
+                        <td>{{treino.tempo_descanso}} seg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-card-content>
+
     </ion-card>
 
     <ion-card>
-            <ion-card-header>
-                    <ion-card-title>Perna</ion-card-title>
-                </ion-card-header>
-                <img src="../../assets/treino-perna.jpg">
+        <img src="../../assets/treino-inferiores.jpg">
+        <ion-card-header>
+            <ion-card-title>Membros Inferiores
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table>
+                <thead>
+                    <th>Series x Repeticoes</th>
+                    <th>Exercicio</th>
+                    <th>Descanso</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let treino of treinoMembroInferiores">
+                        <td>{{treino.numero_repeticoes}} x {{treino.quantidade_series}}</td>
+                        <td>{{treino.nome}}</td>
+                        <td>{{treino.tempo_descanso}} seg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-card-content>
+
     </ion-card>
 
     <ion-card>
-         <ion-card-header>
-                   <ion-card-title>Panturrilha & Ombro</ion-card-title>
-               </ion-card-header>
-               <img src="../../assets/treino-ombro.jpg">
+        <img src="../../assets/treino-ombreira.jpg">
+        <ion-card-header>
+            <ion-card-title>Ombro
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table>
+                <thead>
+                    <th>Series x Repeticoes</th>
+                    <th>Exercicio</th>
+                    <th>Descanso</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let treino of treinoOmbro">
+                        <td>{{treino.numero_repeticoes}} x {{treino.quantidade_series}}</td>
+                        <td>{{treino.nome}}</td>
+                        <td>{{treino.tempo_descanso}} seg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-card-content>
+
     </ion-card>
-        
+
     <ion-card>
-            <ion-card-header>
-                    <ion-card-title>Braço</ion-card-title>
-                </ion-card-header>
-                <img src="../../assets/treino-braco.jpg">
+        <img src="../../assets/treino-braco.jpg">
+        <ion-card-header>
+            <ion-card-title>Braço
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <table>
+                <thead>
+                    <th>Series x Repeticoes</th>
+                    <th>Exercicio</th>
+                    <th>Descanso</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let treino of treinoBraco">
+                        <td>{{treino.numero_repeticoes}} x {{treino.quantidade_series}}</td>
+                        <td>{{treino.nome}}</td>
+                        <td>{{treino.tempo_descanso}} seg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ion-card-content>
+
     </ion-card>
-    
 
 </ion-content>
