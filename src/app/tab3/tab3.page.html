@@ -10,12 +10,12 @@
     <ion-card>
         <img src="../../assets/treino-peitoral.jpg">
         <ion-card-header>
-            <ion-card-title>Peitoral
+            <ion-card-title (click)="mostrarTreinoPeito()">Peitoral
                 <ion-icon name="arrow-dropdown"></ion-icon>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <table>
+            <table *ngIf="this.btnPeitoral">
                 <thead>
                     <th>Series x Repeticoes</th>
                     <th>Exercicio</th>
@@ -35,12 +35,12 @@
     <ion-card>
         <img src="../../assets/treino-costa.jpg">
         <ion-card-header>
-            <ion-card-title>Costas
+            <ion-card-title (click)="mostrarTreinoCostas()">Costas
                 <ion-icon name="arrow-dropdown"></ion-icon>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <table>
+            <table *ngIf="this.btnCostas">
                 <thead>
                     <th>Series x Repeticoes</th>
                     <th>Exercicio</th>
@@ -61,12 +61,12 @@
     <ion-card>
         <img src="../../assets/treino-inferiores.jpg">
         <ion-card-header>
-            <ion-card-title>Membros Inferiores
+            <ion-card-title (click)="mostrarTreinoPerna()">Membros Inferiores
                 <ion-icon name="arrow-dropdown"></ion-icon>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <table>
+            <table *ngIf="this.btnPernas">
                 <thead>
                     <th>Series x Repeticoes</th>
                     <th>Exercicio</th>
@@ -87,12 +87,12 @@
     <ion-card>
         <img src="../../assets/treino-ombreira.jpg">
         <ion-card-header>
-            <ion-card-title>Ombro
+            <ion-card-title (click)="mostrarTreinoOmbro()">Ombro
                 <ion-icon name="arrow-dropdown"></ion-icon>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <table>
+            <table *ngIf="this.btnOmbro">
                 <thead>
                     <th>Series x Repeticoes</th>
                     <th>Exercicio</th>
@@ -113,12 +113,12 @@
     <ion-card>
         <img src="../../assets/treino-braco.jpg">
         <ion-card-header>
-            <ion-card-title>Braço
+            <ion-card-title (click)="mostrarTreinoBraco()">Braço
                 <ion-icon name="arrow-dropdown"></ion-icon>
             </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <table>
+            <table *ngIf="this.btnBraco">
                 <thead>
                     <th>Series x Repeticoes</th>
                     <th>Exercicio</th>
