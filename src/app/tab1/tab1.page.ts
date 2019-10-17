@@ -12,7 +12,9 @@ import { EditarPerfilPage } from '../editar-perfil/editar-perfil.page';
 })
 export class Tab1Page {
 
-  constructor(private perfilService : PerfilService, private router : Router) {}
+  constructor(
+    private perfilService : PerfilService, 
+    private router : Router) {}
 
   hoje : Date = new Date();
 

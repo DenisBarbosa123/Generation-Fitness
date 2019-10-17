@@ -1,3 +1,7 @@
+:host {
+    --background: var(--ion-toolbar-background, var(--ion-background-color, black));
+}
+
 .welcome-card img {
     //max-height: 35vh;
     overflow: hidden;
@@ -6,6 +10,11 @@
     //height: 150px;
     // position: initial;
     margin: auto;
+}
+
+.toolbar-background,
+ ::slotted(ion-progress-bar) {
+    background-color: #1e2023;
 }
 
 p {

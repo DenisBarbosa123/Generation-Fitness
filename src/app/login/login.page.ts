@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Aluno } from '../model/aluno';
 import { Router } from '@angular/router';
 import { PerfilService } from '../perfil.service';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,10 @@ import { PerfilService } from '../perfil.service';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router : Router, private perfilService : PerfilService) { }
+  constructor(
+    private router : Router, 
+    private perfilService : PerfilService,
+    private loadingCtrl : LoadingController) { }
 
   newAluno: Aluno;
   oldAluno: Aluno;
@@ -22,21 +26,26 @@ export class LoginPage implements OnInit {
     this.oldAluno = this.perfilService.getAluno();
   }
 
+  openLoading(){
+    this.loadingCtrl.create({
+      message: 'Loading...',
+      duration: 300
+    }).then(loader => loader.present());
+  
+  }
+
   abrirHome(){
     this.router.navigate(['tabs']);
   }
 
   makeLogin(){
-    console.log("fazendo login...");
-    console.log(this.newAluno.email);
-    console.log(this.newAluno.senha);
-
+    
     if(this.newAluno.email === this.oldAluno.email &&
         this.newAluno.senha === this.oldAluno.senha){
-          console.log("login feito com sucesso!");
           if(this.esconderErroLogin==false){
             this.esconderErroLogin = true;
           }
+          this.openLoading();
           this.abrirHome();
     }else{
       console.log("erro no login!");
