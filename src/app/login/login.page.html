@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header style="background-color: black;">
     <ion-toolbar>
         <ion-title>Login</ion-title>
     </ion-toolbar>
@@ -7,31 +7,35 @@
 <ion-content>
     <ion-card-content class="background">
         <ion-card>
-            <h2>Generation Fitness</h2>
-            <h2>uma nova Percepção!</h2> 
+            <h2 style="margin:0px">GENERATION FITNESS</h2>
+            <h2>uma nova Percepção!</h2>
             
 
             <ion-card>
-                <div>
+                <div padding-top>
                     <ion-label class="label" position="floating">E-mail</ion-label>
                     <ion-input type="email" class="input" [(ngModel)]="newAluno.email" name="email" required #email="ngModel"></ion-input>
                     <span class="error" *ngIf="email.invalid && email.dirty">
             *Campo Invalido
         </span>
                 </div>
-
-                <ion-label class="label" position="floating">Senha</ion-label>
-                <ion-input type="password" class="input" [(ngModel)]="newAluno.senha" name="senha" required #senha="ngModel"></ion-input>
-                <span class="error" *ngIf="senha.invalid && senha.dirty">
-            *Campo Invalido
-        </span>
+                <div padding-top>
+                    <ion-label class="label" position="floating">Senha</ion-label>
+                    <ion-input type="password" class="input" [(ngModel)]="newAluno.senha" name="senha" required #senha="ngModel"></ion-input>
+                    <span class="error" *ngIf="senha.invalid && senha.dirty">
+                *Campo Invalido
+            </span>
+                </div>
+               
                 <span class="error" *ngIf="!this.esconderErroLogin">
             *Login Incorreto
         </span>
             </ion-card>
-
-            <ion-button color="success" expand="block" (click)="makeLogin()">Entrar</ion-button>
-            <ion-button color="danger" expand="block" (click)="closeApp()">Sair</ion-button>
+            <div style="padding-top: 50px">
+                <ion-button color="success" expand="block" (click)="makeLogin()" >Entrar</ion-button>
+                <ion-button color="danger" expand="block" (click)="closeApp()" >Sair</ion-button>
+            </div>
+            
 
         </ion-card>
     </ion-card-content>
