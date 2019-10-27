@@ -1,26 +1,32 @@
 export class Aluno{
-
+     public id: string;
     public  nome:string;
     public email:string;
     public senha:string;
     public cpf: string;
     public celular: string;
-    public data_nascimento: Date;
     public objetivo: string;
 
     
-    constructor(nome?:string, email?:string, senha?:string, cpf?:string, celular?:string, data_nascimento?:Date, objetivo?:string){
+    constructor(id?:string, nome?:string, email?:string, senha?:string, cpf?:string, celular?:string, objetivo?:string){
+        this.id = id;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.cpf = cpf;
-        this.data_nascimento = data_nascimento;
         this.celular = celular;
         this.objetivo = objetivo;
 
     }
 
     //getters and setters
+
+    public getid(): string {
+        return this.id;
+    }
+    public setid(value: string) {
+        this.id = value;
+    }
     public getcelular(): string {
         return this.celular;
     }
@@ -38,13 +44,6 @@ export class Aluno{
     }
     public setobjetivo(value: string) {
         this.objetivo = value;
-    }
-
-    public getdatanascimento(): Date {
-        return this.data_nascimento;
-    }
-    public setdata_nascimento(value: Date) {
-        this.data_nascimento = value;
     }
     public getNome():string{
         return this.nome;

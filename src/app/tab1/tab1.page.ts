@@ -15,29 +15,27 @@ export class Tab1Page {
 
   constructor(
     private perfilService : PerfilService, 
-    private router : Router,
-    private loginService : LoginService) {}
+    private router : Router) {}
 
     alunos : Aluno [];
     hoje : Date;
     aluno : Aluno;
+    idade : number;
 
     ngOnInit() {
       this.aluno = new Aluno();
       this.hoje = new Date();
-      this.alunos = [];
-      console.log("oi");
-      this.loginService.getAlunoLogin().subscribe(
-        data => this.alunos = data
-      );
-      console.log("feito get perfil");
-      console.log(this.alunos[0].nome);
-      //this.aluno = this.alunos[0];
+      this.getAluno("1");
+      
     }
 
-  //idade : number = this.hoje.getFullYear() - this.aluno.getdatanascimento().getFullYear();
+    
 
-
+    getAluno(idAluno : string){
+      this.perfilService.getAlunoLogin(idAluno).subscribe(
+        data => this.aluno = data
+      );
+    }
   
 
 

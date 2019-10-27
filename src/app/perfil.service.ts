@@ -1,18 +1,23 @@
 import { Injectable } from '@angular/core';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Aluno } from './model/aluno';
-
+const httpOption = {
+  headers : new HttpHeaders({"Content-Type" : "application/json"})
+};
 @Injectable({
   providedIn: 'root'
 })
 export class PerfilService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  aluno : Aluno = new Aluno('Denis', 'denis@gmail.com', 'abc', '115.357.616-36', '35 9 9987-8502', new Date(1998, 1, 23), 'Hipertrofia');
-
-  getAluno(){
-    return this.aluno;
+  private url = 'http://localhost:3000/aluno';
+ 
+  getAlunoLogin(id : string) : Observable<Aluno> {
+    return this.http.get<Aluno>(this.url + "/" + id);
   }
+
 
 }
 
