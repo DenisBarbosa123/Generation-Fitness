@@ -1,0 +1,12 @@
+{
+  "aluno": [
+    {
+		"nome": "Denis Barbosa",
+		"email": "denis@gmail.com",
+		"senha": "abc",
+		"cpf": "115.357.616-36",
+		"data_nascimento": "1998-01-23T00:00:00.000Z",
+		"objetivo": "Hipertrofia"
+	}
+  ]
+}

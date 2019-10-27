@@ -1,15 +1,9 @@
-<ion-header style="background-color: black;">
-    <ion-toolbar>
-        <ion-title>Login</ion-title>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
     <ion-card-content class="background">
         <ion-card>
             <h2 style="margin:0px">GENERATION FITNESS</h2>
             <h2>uma nova Percepção!</h2>
-            
+
 
             <ion-card>
                 <div padding-top>
@@ -26,16 +20,16 @@
                 *Campo Invalido
             </span>
                 </div>
-               
+
                 <span class="error" *ngIf="!this.esconderErroLogin">
             *Login Incorreto
         </span>
             </ion-card>
             <div style="padding-top: 50px">
-                <ion-button color="success" expand="block" (click)="makeLogin()" >Entrar</ion-button>
-                <ion-button color="danger" expand="block" (click)="closeApp()" >Sair</ion-button>
+                <ion-button color="success" expand="block" (click)="makeLogin()">Entrar</ion-button>
+                <ion-button color="danger" expand="block" (click)="closeApp()">Sair</ion-button>
             </div>
-            
+
 
         </ion-card>
     </ion-card-content>
