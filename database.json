@@ -9,5 +9,54 @@
 		"celular" : "35 9999 - 9999",
 		"objetivo": "Hipertrofia"
 	}
+  ],
+  
+  "treinoPeito" : [
+	{
+		  "exercicios": [
+				{
+				  "nome": "Supino Reto",
+				  "numero_repeticoes": "12",
+				  "quantidade_series": "4",
+				  "tempo_descanso": "30"
+				},
+				{
+				  "nome": "Supino Inclinado",
+				  "numero_repeticoes": "12",
+				  "quantidade_series": "4",
+				  "tempo_descanso": "30"
+				},
+				{
+				  "nome": "Supino Declinado",
+				  "numero_repeticoes": "12",
+				  "quantidade_series": "4",
+				  "tempo_descanso": "30"
+				},
+				{
+				  "nome": "Crucifixo Inclinado",
+				  "numero_repeticoes": "12",
+				  "quantidade_series": "4",
+				  "tempo_descanso": "30"
+				},
+				{
+				  "nome": "Pull-Over",
+				  "numero_repeticoes": "12",
+				  "quantidade_series": "4",
+				  "tempo_descanso": "30"
+				},
+				{	
+					"nome": "Cross-over",
+					"numero_repeticoes": "12",
+					"quantidade_series": "4",
+					"tempo_descanso": "30"
+				
+				}
+		  
+			]
+		
+	}
+  
   ]
-}
+  
+ }
+ 
