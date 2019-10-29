@@ -19,11 +19,34 @@ export class Tab3Page {
 
   constructor(private treinoService : TreinoService) {}
 
-  treinoPeitoral : exercicio [] = this.treinoService.getTreinoPeitoral();
-  treinoCostas : exercicio [] = this.treinoService.getTreinoCostas();
-  treinoMembroInferiores : exercicio [] = this.treinoService.getTreinoMembrosInferiores();
-  treinoOmbro : exercicio [] = this.treinoService.getTreinoOmbro();
-  treinoBraco : exercicio [] = this.treinoService.getTreinoBraco();
+  treinoPeitoral : exercicio [] = [];
+  treinoCostas : exercicio [] = [];
+  treinoMembroInferiores : exercicio [] = [];
+  treinoOmbro : exercicio [] = [];
+  treinoBraco : exercicio [] = [];
+  ngOnInit(){
+    this.treinoService.getTreinoPeitoral().subscribe(
+      data => this.treinoPeitoral = data
+    )
+
+    this.treinoService.getTreinoCostas().subscribe(
+      data => this.treinoCostas = data
+    )
+
+    this.treinoService.getTreinoOmbro().subscribe(
+      data => this.treinoOmbro = data
+    )
+
+    this.treinoService.getTreinoPerna().subscribe(
+      data => this.treinoMembroInferiores = data
+    )
+
+    this.treinoService.getTreinoBraco().subscribe(
+      data => this.treinoBraco = data
+    )
+  }
+
+ 
 
   mostrarTreinoPeito(){
    this.btnPeitoral == false ? this.btnPeitoral = true : this.btnPeitoral = false;

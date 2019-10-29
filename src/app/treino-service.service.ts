@@ -1,23 +1,47 @@
 import { Injectable } from '@angular/core';
 import { grupo_muscular } from './model/grupo_muscular';
 import { exercicio } from './model/exercicio';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+const httpOption = {
+  headers : new HttpHeaders({"Content-Type" : "application/json"})
+};
 
 @Injectable({
   providedIn: 'root'
 })
 export class TreinoService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  grupoPeitoral : grupo_muscular = new grupo_muscular();
-
-  exerciciosPeitoral : exercicio [] = [];
-  exerciciosCostas : exercicio [] = [];
-  exerciciosMembrosInferiores : exercicio [] = [];
-  exerciciosOmbro : exercicio [] = [];
-  exerciciosBraco : exercicio [] = [];
+  private url = 'http://localhost:3000/';
+  private urlTreinoPeitoral = this.url + 'treinoPeito';
+  private urlTreinoCostas = this.url + 'treinoCostas';
+  private urlTreinoPerna = this.url + 'treinoPerna';
+  private urlTreinoOmbro = this.url + 'treinoOmbro';
+  private urlTreinoBraco = this.url + 'treinoBraco';
 
   getTreinoPeitoral(){
+    return this.http.get<exercicio[]>(this.urlTreinoPeitoral);
+  }
+
+  getTreinoCostas(){
+    return this.http.get<exercicio[]>(this.urlTreinoCostas);
+  }
+
+  getTreinoOmbro(){
+    return this.http.get<exercicio[]>(this.urlTreinoOmbro);
+  }
+
+  getTreinoPerna(){
+    return this.http.get<exercicio[]>(this.urlTreinoPerna);
+  }
+
+  getTreinoBraco(){
+    return this.http.get<exercicio[]>(this.urlTreinoBraco);
+  }
+  
+
+  /*getTreinoPeitoral(){
     this.exerciciosPeitoral.push(new exercicio('Supino Reto',4, 40, 8));
     this.exerciciosPeitoral.push(new exercicio('Supino Inclinado',4, 40, 10));
     this.exerciciosPeitoral.push(new exercicio('Supino Declinado',4, 40, 10));
@@ -62,5 +86,5 @@ export class TreinoService {
     this.exerciciosBraco.push(new exercicio('Rosca Concentrada',4, 40, 12));
     this.exerciciosBraco.push(new exercicio('Pulley pegada fechada',4, 40, 12));
     return this.exerciciosBraco;
-  }
+  }*/
 }
