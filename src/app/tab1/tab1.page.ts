@@ -21,11 +21,13 @@ export class Tab1Page {
     hoje : Date;
     aluno : Aluno;
     idade : number;
+    id : string = "1";
 
     ngOnInit() {
+      console.log("inicializando perfil");
       this.aluno = new Aluno();
       this.hoje = new Date();
-      this.getAluno("1");
+      this.getAluno(this.id);
       
     }
 

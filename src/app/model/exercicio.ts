@@ -3,8 +3,6 @@ export class exercicio{
     public numero_repeticoes: number;
     public tempo_descanso: number;
     public quantidade_series: number;
-   
-    
 
     constructor(nome?:string, numero_repeticoes?:number, tempo_descanso?:number, quantidade_series?:number ){
         this.nome = nome;
@@ -25,9 +23,6 @@ export class exercicio{
     public setTempo_descanso(value: number) {
         this.tempo_descanso = value;
     }
-    
-
-
     public getQuantidade_series(): number {
         return this.quantidade_series;
     }

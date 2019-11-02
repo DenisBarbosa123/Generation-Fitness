@@ -12,8 +12,6 @@
   ],
   
   "treinoPeito" : [
-	{
-		  "exercicios": [
 				{
 				  "nome": "Supino Reto",
 				  "numero_repeticoes": "12",
@@ -52,15 +50,10 @@
 				
 				}
 		  
-			]
-		
-	}
   
   ],
   
   "treinoOmbro" : [
-	{
-		  "exercicios": [
 				{
 				  "nome": "Desenvolvimento",
 				  "numero_repeticoes": "12",
@@ -98,16 +91,10 @@
 					"tempo_descanso": "60"
 				
 				}
-		  
-			]
-		
-	}
   
   ],
   
   "treinoPerna" : [
-	{
-		  "exercicios": [
 				{
 				  "nome": "Cadeira Extensora",
 				  "numero_repeticoes": "10",
@@ -145,16 +132,10 @@
 					"tempo_descanso": "60"
 				
 				}
-		  
-			]
-		
-	}
   
   ],
   
   "treinoCostas" : [
-	{
-		  "exercicios": [
 				{
 				  "nome": "Barra fixa",
 				  "numero_repeticoes": "10",
@@ -192,16 +173,10 @@
 					"tempo_descanso": "60"
 				
 				}
-		  
-			]
-		
-	}
   
   ],
   
   "treinoBraco" : [
-	{
-		  "exercicios": [
 				{
 				  "nome": "Rosca direta",
 				  "numero_repeticoes": "10",
@@ -239,9 +214,6 @@
 				  "tempo_descanso": "45"
 				}
 				
-			]
-		
-	}
   
   ]
  }

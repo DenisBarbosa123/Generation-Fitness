@@ -25,22 +25,41 @@ export class Tab3Page {
   treinoOmbro : exercicio [] = [];
   treinoBraco : exercicio [] = [];
   ngOnInit(){
+
+    console.log("inicializando treino");
+    this.getTreinoPeitoral();
+    this.getTreinoCostas();
+    this.getTreinoOmbro();
+    this.getTreinoPernas();
+    this.getTreinoBraco();
+    
+  }
+
+  getTreinoPeitoral(){
     this.treinoService.getTreinoPeitoral().subscribe(
       data => this.treinoPeitoral = data
     )
+  }
 
+  getTreinoCostas(){
     this.treinoService.getTreinoCostas().subscribe(
       data => this.treinoCostas = data
     )
+  }
 
-    this.treinoService.getTreinoOmbro().subscribe(
-      data => this.treinoOmbro = data
-    )
-
+  getTreinoPernas(){
     this.treinoService.getTreinoPerna().subscribe(
       data => this.treinoMembroInferiores = data
     )
+  }
 
+  getTreinoOmbro(){
+    this.treinoService.getTreinoOmbro().subscribe(
+      data => this.treinoOmbro = data
+    )
+  }
+
+  getTreinoBraco(){
     this.treinoService.getTreinoBraco().subscribe(
       data => this.treinoBraco = data
     )
