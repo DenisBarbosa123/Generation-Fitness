@@ -38,6 +38,10 @@ export class Tab1Page {
         data => this.aluno = data
       );
     }
+
+    editarPerfil(){
+      this.router.navigate(['editar-perfil']);
+    }
   
 
 
