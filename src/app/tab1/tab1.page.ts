@@ -24,14 +24,11 @@ export class Tab1Page {
     id : string = "1";
 
     ngOnInit() {
-      console.log("inicializando perfil");
       this.aluno = new Aluno();
       this.hoje = new Date();
       this.getAluno(this.id);
       
     }
-
-    
 
     getAluno(idAluno : string){
       this.perfilService.getAlunoLogin(idAluno).subscribe(
@@ -41,6 +38,14 @@ export class Tab1Page {
 
     editarPerfil(){
       this.router.navigate(['editar-perfil']);
+    }
+
+    doRefresh(event) {
+      this.getAluno(this.id);
+  
+      setTimeout(() => {
+        event.target.complete();
+      }, 1000);
     }
   
 

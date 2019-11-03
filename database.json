@@ -1,220 +1,203 @@
 {
   "aluno": [
     {
-		"id" : "1",
-		"nome": "Denis Barbosa",
-		"email": "denis@gmail.com",
-		"senha": "abc",
-		"cpf": "115.357.616-36",
-		"celular" : "35 9999 - 9999",
-		"objetivo": "Hipertrofia"
-	}
+      "id": "1",
+      "nome": "Denis Barbosa",
+      "email": "denis@gmail.com",
+      "senha": "abc",
+      "cpf": "115.357.616-36",
+      "celular": "35999878502",
+      "objetivo": "Hipertrofia"
+    }
   ],
-  
-  "treinoPeito" : [
-				{
-				  "nome": "Supino Reto",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "30"
-				},
-				{
-				  "nome": "Supino Inclinado",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "30"
-				},
-				{
-				  "nome": "Supino Declinado",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "30"
-				},
-				{
-				  "nome": "Crucifixo Inclinado",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "30"
-				},
-				{
-				  "nome": "Pull-Over",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "30"
-				},
-				{	
-					"nome": "Cross-over",
-					"numero_repeticoes": "12",
-					"quantidade_series": "4",
-					"tempo_descanso": "30"
-				
-				}
-		  
-  
+  "treinoPeito": [
+    {
+      "nome": "Supino Reto",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    },
+    {
+      "nome": "Supino Inclinado",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    },
+    {
+      "nome": "Supino Declinado",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    },
+    {
+      "nome": "Crucifixo Inclinado",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    },
+    {
+      "nome": "Pull-Over",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    },
+    {
+      "nome": "Cross-over",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "30"
+    }
   ],
-  
-  "treinoOmbro" : [
-				{
-				  "nome": "Desenvolvimento",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Elevação lateral",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Elevação frontal",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Remada alta",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Crucifixo inverso",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "3",
-				  "tempo_descanso": "45"
-				},
-				{	
-					"nome": "Rotação interna",
-					"numero_repeticoes": "12",
-					"quantidade_series": "6",
-					"tempo_descanso": "60"
-				
-				}
-  
+  "treinoOmbro": [
+    {
+      "nome": "Desenvolvimento",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Elevação lateral",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Elevação frontal",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Remada alta",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Crucifixo inverso",
+      "numero_repeticoes": "12",
+      "quantidade_series": "3",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Rotação interna",
+      "numero_repeticoes": "12",
+      "quantidade_series": "6",
+      "tempo_descanso": "60"
+    }
   ],
-  
-  "treinoPerna" : [
-				{
-				  "nome": "Cadeira Extensora",
-				  "numero_repeticoes": "10",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Cadeira flexora",
-				  "numero_repeticoes": "10",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Leg Press",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Agachamento",
-				  "numero_repeticoes": "8",
-				  "quantidade_series": "5",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Passada estática",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "3",
-				  "tempo_descanso": "45"
-				},
-				{	
-					"nome": "Panturrilha",
-					"numero_repeticoes": "12",
-					"quantidade_series": "6",
-					"tempo_descanso": "60"
-				
-				}
-  
+  "treinoPerna": [
+    {
+      "nome": "Cadeira Extensora",
+      "numero_repeticoes": "10",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Cadeira flexora",
+      "numero_repeticoes": "10",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Leg Press",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Agachamento",
+      "numero_repeticoes": "8",
+      "quantidade_series": "5",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Passada estática",
+      "numero_repeticoes": "12",
+      "quantidade_series": "3",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Panturrilha",
+      "numero_repeticoes": "12",
+      "quantidade_series": "6",
+      "tempo_descanso": "60"
+    }
   ],
-  
-  "treinoCostas" : [
-				{
-				  "nome": "Barra fixa",
-				  "numero_repeticoes": "10",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Puxador frontal",
-				  "numero_repeticoes": "10",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Puxador triangulo",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Remada curvada",
-				  "numero_repeticoes": "8",
-				  "quantidade_series": "5",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Levantamento terra",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "3",
-				  "tempo_descanso": "45"
-				},
-				{	
-					"nome": "Remada unilateral",
-					"numero_repeticoes": "12",
-					"quantidade_series": "6",
-					"tempo_descanso": "60"
-				
-				}
-  
+  "treinoCostas": [
+    {
+      "nome": "Barra fixa",
+      "numero_repeticoes": "10",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Puxador frontal",
+      "numero_repeticoes": "10",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Puxador triangulo",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Remada curvada",
+      "numero_repeticoes": "8",
+      "quantidade_series": "5",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Levantamento terra",
+      "numero_repeticoes": "12",
+      "quantidade_series": "3",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Remada unilateral",
+      "numero_repeticoes": "12",
+      "quantidade_series": "6",
+      "tempo_descanso": "60"
+    }
   ],
-  
-  "treinoBraco" : [
-				{
-				  "nome": "Rosca direta",
-				  "numero_repeticoes": "10",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Rosca Double Biceps",
-				  "numero_repeticoes": "15",
-				  "quantidade_series": "3",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Rosca 21",
-				  "numero_repeticoes": "21",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Triceps no cabo",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Triceps Testa",
-				  "numero_repeticoes": "12",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				},
-				{
-				  "nome": "Triceps Banco",
-				  "numero_repeticoes": "8",
-				  "quantidade_series": "4",
-				  "tempo_descanso": "45"
-				}
-				
-  
+  "treinoBraco": [
+    {
+      "nome": "Rosca direta",
+      "numero_repeticoes": "10",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Rosca Double Biceps",
+      "numero_repeticoes": "15",
+      "quantidade_series": "3",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Rosca 21",
+      "numero_repeticoes": "21",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Triceps no cabo",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Triceps Testa",
+      "numero_repeticoes": "12",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    },
+    {
+      "nome": "Triceps Banco",
+      "numero_repeticoes": "8",
+      "quantidade_series": "4",
+      "tempo_descanso": "45"
+    }
   ]
- }
- 
+}

@@ -18,6 +18,12 @@ export class PerfilService {
     return this.http.get<Aluno>(this.url + "/" + id);
   }
 
+  editarAluno(aluno : Aluno) : Observable<Aluno>{
+    return this.http.put<Aluno>(this.url + '/' + aluno.id, aluno, httpOption);
+  }
+
+
+
 
 }
 

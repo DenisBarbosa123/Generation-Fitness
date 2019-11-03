@@ -26,7 +26,6 @@ export class Tab3Page {
   treinoBraco : exercicio [] = [];
   ngOnInit(){
 
-    console.log("inicializando treino");
     this.getTreinoPeitoral();
     this.getTreinoCostas();
     this.getTreinoOmbro();

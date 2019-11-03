@@ -10,42 +10,42 @@
 
             <div>
                 <ion-label>Nome</ion-label>
-                <ion-input type="text" [(ngModel)]="newAluno.nome" name="nome" required #nome="ngModel"></ion-input>
+                <ion-input type="text" value="newAluno.nome" [(ngModel)]="newAluno.nome" name="nome" required #nome="ngModel"></ion-input>
                 <span class="error" *ngIf="nome.invalid && nome.dirty">
           Campo Invalido
       </span>
             </div>
             <div>
                 <ion-label>CPF</ion-label>
-                <ion-input type="text" [(ngModel)]="newAluno.cpf" name="cpf" required #cpf="ngModel"></ion-input>
+                <ion-input type="text" value="newAluno.cpf" [(ngModel)]="newAluno.cpf" name="cpf" required #cpf="ngModel"></ion-input>
                 <span class="error" *ngIf="cpf.invalid && cpf.dirty">
             Campo Invalido
         </span>
             </div>
             <div>
                 <ion-label>E-mail</ion-label>
-                <ion-input type="email" [(ngModel)]="newAluno.email" name="email" required #email="ngModel"></ion-input>
+                <ion-input type="email" value="newAluno.email" [(ngModel)]="newAluno.email" name="email" required #email="ngModel"></ion-input>
                 <span class="error" *ngIf="email.invalid && email.dirty">
             Campo Invalido
         </span>
             </div>
             <div>
                 <ion-label>Celular</ion-label>
-                <ion-input type="text" [(ngModel)]="newAluno.celular" name="celular" required #celular="ngModel"></ion-input>
+                <ion-input type="text" value="newAluno.celular" [(ngModel)]="newAluno.celular" name="celular" required #celular="ngModel"></ion-input>
                 <span class="error" *ngIf="celular.invalid && celular.dirty">
             Campo Invalido
         </span>
             </div>
             <div>
                 <ion-label>Objetivo</ion-label>
-                <ion-input type="text" [(ngModel)]="newAluno.objetivo" name="objetivo" required #objetivo="ngModel"></ion-input>
+                <ion-input type="text" value="newAluno.objetivo" [(ngModel)]="newAluno.objetivo" name="objetivo" required #objetivo="ngModel"></ion-input>
                 <span class="error" *ngIf="objetivo.invalid && objetivo.dirty">
             Campo Invalido
         </span>
             </div>
 
-            <ion-button padding-top padding-bottom color="success">Salvar</ion-button>
-            <ion-button padding-top padding-bottom color="danger" style="float: right;">Cancelar</ion-button>
+            <ion-button padding-top padding-bottom color="success" (click)="editarAluno()">Salvar</ion-button>
+            <ion-button padding-top padding-bottom color="danger" (click)="cancelarEditar()" style="float: right;">Cancelar</ion-button>
 
         </ion-card>
     </ion-card-content>
